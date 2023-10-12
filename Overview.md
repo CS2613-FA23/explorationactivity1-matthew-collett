@@ -24,24 +24,24 @@ There will be a series of questions in setting up the Nuxt project such as choos
 
 3. **Project Directory:** After the initial setup, navigate to the project directory:
 ```
-cd <project-name>
+$ cd <project-name>
 ```
 
 5. **Directory Structure:** A Nuxt project includes directories like assets, components, layouts, pages, store, and middleware, each with a specific purpose in the application's structure.
 
 6. **Development:** Nuxt.js is friendly and out of the box functional as you can start your Nuxt app locally instantly by simply running:
 ```
-npm run dev
+$ npm run dev
 ```
 
 8. **Production:** To prepare the application for production, you build it by running:
 ```
-npm run build
+$ npm run build
 ```
 Which will build all assets for production. 
 Then you can run your application at production level using: 
 ```
-npm run start
+$ npm run start
 ```
 
 ## Functionality
