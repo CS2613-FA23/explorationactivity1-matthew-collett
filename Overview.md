@@ -16,26 +16,40 @@ Nuxt.js provides clean and useful solutions for many challanges that modern day 
 4. **Enhanced Developer Experience:** Nuxt abstracts common and repetitive tasks involved for the developer. Features like module management, out-of-box structure, and automatic routing allow developers to focus on building features without having to worry about manual setup and configuration.
 
 ### Using Nuxt.js
-1. **Installation:** To start a new project, you can use the create-nuxt-app: `npx create-nuxt-app <project-name>`
-<br>
+1. **Installation:** To start a new project, you can use the create-nuxt-app:
+```
+$ npx create-nuxt-app <project-name>
+```
 There will be a series of questions in setting up the Nuxt project such as choosing UI frameworks, testing utilities, etc. that help to personalize the framework to your needs.
 
-2. **Project Directory:** After the initial setup, navigate to the project directory: `cd <project-name>`
+3. **Project Directory:** After the initial setup, navigate to the project directory:
+```
+cd <project-name>
+```
 
-3. **Directory Structure:** A Nuxt project includes directories like assets, components, layouts, pages, store, and middleware, each with a specific purpose in the application's structure.
+5. **Directory Structure:** A Nuxt project includes directories like assets, components, layouts, pages, store, and middleware, each with a specific purpose in the application's structure.
 
-4. **Development:** Nuxt.js is friendly and out of the box functional as you can start your Nuxt app locally instantly by simply running: `npm run dev`
+6. **Development:** Nuxt.js is friendly and out of the box functional as you can start your Nuxt app locally instantly by simply running:
+```
+npm run dev
+```
 
-5. **Production:** To prepare the application for production, you build it by running: `npm run build` which will build all assets for production. 
-<br>
-<br>
-Then you can run your application at production level using: `npm run start`
+8. **Production:** To prepare the application for production, you build it by running:
+```
+npm run build
+```
+Which will build all assets for production. 
+Then you can run your application at production level using: 
+```
+npm run start
+```
 
 ## Functionality
 Nuxt.js provides a plethora of functionality that can not all be covered in one study. However, I will outline some of the features that stuck out to me the most.
 
 ### Directory Structure
-*include image
+<img width="383" alt="Screen Shot 2023-10-12 at 1 31 44 AM" src="https://github.com/CS2613-FA23/explorationactivity1-matthew-collett/assets/97645707/c24d077d-f640-4299-b5b6-72ee98700664">
+
 
 ### State Management with Vuex Store
 - State: This is the data being passed around in the application. In my app, the state has a count property.
@@ -58,16 +72,19 @@ export const mutations = {
 
 ### Component: **nuxt-link**
 Optimized for Nuxt's capabilities, especially for SSR, it can preload linked pages when they're visible in the viewport, leading to faster navigation experiences.
-<br>
-`<nuxt-link to="/endpoint">Endpoint Link</nuxt-link>`
+```
+<nuxt-link to="/endpoint">Endpoint Link</nuxt-link>
+```
 
 ### Directives: 
 Special characters that tell the library to do something. They are prefixed with v- or @, below see the directive that corresponds to JavaScript's onClick listener
-<br>
-`<button @click="increment">Click me!</button>`
+```
+<button @click="increment">Click me!</button>
+```
 
 ### Nuxt Configuration for Modules, Plugins, and Add-ons
-```export default {
+```
+export default {
   // Global page headers
   head: { ... },
 
